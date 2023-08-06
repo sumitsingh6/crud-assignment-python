@@ -35,9 +35,9 @@ Host: http://127.0.0.1:8000
 
 
 **Response**
-`{"message":"User added successfully"}`
+`{"acknowledged":true,"inserted_id":"userid"}`
 
-![enter image description here](https://user-images.githubusercontent.com/38861211/258647970-33d89bc9-26a3-4143-9bdd-2e1b4b4c2138.png)
+![enter image description here](https://user-images.githubusercontent.com/38861211/258662655-d38fe5c1-88db-4a65-a133-9eb333256b0b.png)
 
 ### 4. To update a user with the specified ID with the new data.
 
@@ -51,15 +51,15 @@ Host: http://127.0.0.1:8000
 
 
 **Response**
-`{"message":"User updated"}`
+`{"acknowledged":true,"matched_count":1,"modified_count":1,"upserted_id":null}`
 
-![enter image description here](https://user-images.githubusercontent.com/38861211/258648933-ceb213ed-e5b3-4020-80cb-319b52636779.png)
+![enter image description here](https://user-images.githubusercontent.com/38861211/258662723-3d3e5880-5d5a-4556-a451-12a179e6a275.png)
 
 ### 5. Deletes the user with the specified ID
 `DELETE /users/<id>`
 
 
 **Response:**
-`{"message":"User Deleted"}`
+`{"acknowledged":true,"deleted_count":1}`
 
-![enter image description here](https://user-images.githubusercontent.com/38861211/258648713-f2cd3890-493c-41cc-ba74-aec719df2993.png)
+![enter image description here](https://user-images.githubusercontent.com/38861211/258662780-a2c6eed9-db9b-4cd7-a8dc-bd42f4fc2b7c.png)
