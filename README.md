@@ -1,8 +1,15 @@
 # Python Assignment: CRUD Api
 **A Flask application that performs CRUD (Create, Read, Update, Delete) operations on a MongoDB database for a User resource using a REST API**
 
+## Using docker to run 
+Make sure you have docker installed in your machine.
+To check if docker is installed run
+`docker --version`
+
+then to execute this app run:
+ `docker run -p 8000:8000 sumitkrsingh98/crud-python-app`
 ## The REST API
-Host: http://127.0.0.1:5000
+Host: http://127.0.0.1:8000
 
 ### 1. To fetch all the users from the database
 `GET /users`
